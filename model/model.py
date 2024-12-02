@@ -10,6 +10,7 @@ from mesa.datacollection import DataCollector
 class EpidemicModel(Model):
     def __init__(self, num_agents, initial_infected, transmission_prob, recovery_prob,
                  vaccination_rate=0.0, network_prob=0.1):
+        super().__init__()
         self.num_agents = num_agents
         self.initial_infected = initial_infected
         self.transmission_prob = transmission_prob
